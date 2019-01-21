@@ -24,5 +24,8 @@
 
     <!-- FOD recognizing animation -->
     <bool name="config_showFODAnimationSettings">true</bool>
+
+        <!-- Device specific doze package -->
+    <string name="config_customDozePackage">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
     
 </resources>
