@@ -345,7 +345,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi \
-    hardware/qcom-caf/sm8150
+    hardware/qcom-caf/sm8150 \
+    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
 
 # Telephony
 PRODUCT_PACKAGES += \
