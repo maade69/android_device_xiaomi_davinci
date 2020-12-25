@@ -117,6 +117,7 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0xa880
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_CMDLINE += service_locator.enable=1
+TARGET_COMPILE_WITH_MSM_KERNEL := true
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 
 BOARD_BOOTIMG_HEADER_VERSION := 1
