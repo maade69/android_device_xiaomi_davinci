@@ -21,10 +21,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from davinci device
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# All components inherited here go to system_ext image
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
-PRODUCT_NAME := lineage_davinci
+# All components inherited here go to product image
+$(call inherit-product, vendor/hentai/build/product/hentai_product.mk)
+
+# All components inherited here go to vendor image
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
+
+# Inherit some common hentai stuff.
+$(call inherit-product, vendor/hentai/config/common_telephony.mk)
+
+PRODUCT_NAME := hentai_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9T
