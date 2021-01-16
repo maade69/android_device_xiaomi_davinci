@@ -29,7 +29,7 @@ TARGET_GAPPS_ARCH := arm64
 
 # Inherit GApps
 $(call inherit-product, vendor/google/pixel/config.mk)
-$(call inherit-product, vendor/google/gms/config.mk)
+$(call inherit-product, vendor/google/gms/gapps.mk)
 
 PRODUCT_NAME := p404_davinci
 PRODUCT_DEVICE := davinci
