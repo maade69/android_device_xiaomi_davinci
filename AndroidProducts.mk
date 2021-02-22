@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_davinci.mk
+    $(LOCAL_DIR)/styx_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_davinci-user \
-    lineage_davinci-userdebug \
-    lineage_davinci-eng
+    styx_davinci-user \
+    styx_davinci-userdebug \
+    styx_davinci-eng
