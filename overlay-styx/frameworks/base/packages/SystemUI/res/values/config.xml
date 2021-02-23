@@ -20,7 +20,4 @@
 
     <!-- Color of the FOD view -->
     <color name="config_fodColor">#00ffffff</color>
-
-    <!-- Shows the required view for in-display fingerprint -->
-    <bool name="config_supportsInDisplayFingerprint">true</bool>
 </resources>
